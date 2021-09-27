@@ -101,4 +101,4 @@ that deck's Deck screen, and finally the text: `Edit Card :cardId`.
 
 ## Technology
 ### Built with:
-- React, JavaScript, HTML, Bootstrap 4
+- React, JavaScript, HTML, Bootstrap 4 for styling, and Open-Iconic icons for icons.
