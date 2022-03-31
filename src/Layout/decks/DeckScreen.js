@@ -24,12 +24,10 @@ function DeckScreen() {
   }, [deckId]);
 
   // If the deck has been fetched from the API, the breadcrumb nav bar and deck info will display
-
   if (deck.name) {
     return (
       <div>
         <DeckScreenBreadcrumbNavBar deckName={deck.name} />
-
         <Route path={url}>
           <DeckInfo
             deckName={deck.name}
