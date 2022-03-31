@@ -1,0 +1,11 @@
+.card {
+    font-family: 'Raleway';
+    width: 90vw;
+    height: auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
