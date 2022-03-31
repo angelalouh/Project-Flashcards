@@ -12,8 +12,8 @@
     },
     {
       "id": 3,
-      "name": "New Deck",
-      "description": "New deck's description."
+      "name": "React + APIs with Hooks",
+      "description": "Learn to use the React effect hook, manually change the DOM, fetch data, and update React components."
     }
   ],
   "cards": [
