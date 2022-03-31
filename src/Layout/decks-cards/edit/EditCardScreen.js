@@ -55,8 +55,7 @@ function EditCardScreen() {
         deckId={deckId}
         cardId={cardId}
       />
-      <h1>Edit Card</h1>
-
+      <h2>Edit Card</h2>
       <form onSubmit={handleEditCardSubmit}>
         <CardForm
           cardFront={cardFront}
@@ -65,7 +64,7 @@ function EditCardScreen() {
           handleCardBackChange={handleCardBackChange}
         />
         <EditCardCancelButton deckId={deckId} />
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" className="btn btn-success">
           Submit
         </button>
       </form>

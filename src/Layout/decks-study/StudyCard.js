@@ -41,7 +41,7 @@ function StudyCard({ cards, currentCard, setCurrentCard, deckId }) {
   if (cards.length < 3) {
     return (
       <div>
-        <h2>Not enough cards.</h2>
+        <h4 className="text-danger font-weight-bold">Not enough cards!</h4>
         <p>
           You need at least 3 cards to study. There are {cards.length} cards in
           this deck.
@@ -54,12 +54,13 @@ function StudyCard({ cards, currentCard, setCurrentCard, deckId }) {
   // Renders the front of the card and the "Flip" button if isFrontOfCard is true
   if (isFrontOfCard) {
     return (
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">
+      <div className="deck-card card">
+        <div className="card-body">
+          <h5 className="card-title">
             Card {cardCount} of {cards.length}
           </h5>
-          <p class="card-text">{currentCard.front}</p>
+          <p className="font-weight-bold font-italic mb-0">Front:</p>
+          <p className="card-text">{currentCard.front}</p>
           <FlipButton setIsFrontOfCard={setIsFrontOfCard} />
         </div>
       </div>
@@ -67,12 +68,13 @@ function StudyCard({ cards, currentCard, setCurrentCard, deckId }) {
   }
   // Renders the back of the card and the "Flip" and "Next" buttons if isFrontOfCard is false
   return (
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">
+    <div className="deck-card card">
+      <div className="card-body">
+        <h5 className="card-title">
           Card {cardCount} of {cards.length}
         </h5>
-        <p class="card-text">{currentCard.back}</p>
+        <p className="font-weight-bold font-italic mb-0">Back:</p>
+        <p className="card-text">{currentCard.back}</p>
         <FlipButton setIsFrontOfCard={setIsFrontOfCard} />
         <NextButton NextCardHandler={NextCardHandler} />
       </div>
