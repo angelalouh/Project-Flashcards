@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import "./Layout.css";
 
 import Header from "./Header";
 import Home from "./home/Home";
@@ -15,7 +16,7 @@ function Layout() {
   return (
     <>
       <Header />
-      <div className="container">
+      <div className="container card">
         <Switch>
           <Route exact path="/">
             <Home />
