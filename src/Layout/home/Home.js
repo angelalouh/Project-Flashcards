@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { listDecks } from "../../utils/api/index";
+import "./Home.css";
 
 import CreateDeckButton from "./CreateDeckButton";
 import ViewDeckButton from "./ViewDeckButton";
@@ -20,23 +21,23 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="home">
       <CreateDeckButton />
 
       {/* Creating a Bootstrap card for each deck and the associated buttons */}
       {decks.map((deck, index) => {
         return (
-          <div class="card" key={index}>
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <h5 class="card-title">{deck.name}</h5>
-                <h6 class="card-subtitle text-muted">
+          <div className="deck-card card mt-2" key={index}>
+            <div className="card-body">
+              <div className="d-flex justify-content-between">
+                <h5 className="card-title font-weight-bold">{deck.name}</h5>
+                <h6 className="card-subtitle text-muted">
                   {deck.cards.length} cards
                 </h6>
               </div>
-              <p class="card-text">{deck.description}</p>
-              <div class="d-flex">
-                <div class="mr-auto">
+              <p className="card-text">{deck.description}</p>
+              <div className="d-flex">
+                <div className="mr-auto">
                   <ViewDeckButton deck={deck} />
                   <StudyDeckButton deck={deck} />
                 </div>
