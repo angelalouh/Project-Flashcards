@@ -6,7 +6,7 @@ function FlipButton({ setIsFrontOfCard }) {
   };
 
   return (
-    <button type="button" class="btn btn-secondary mr-2" onClick={flipCardHandler}>
+    <button type="button" className="btn btn-dark mr-2" onClick={flipCardHandler}>
       Flip
     </button>
   );
