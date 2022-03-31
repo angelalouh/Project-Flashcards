@@ -6,10 +6,10 @@ function CreateDeckButton() {
   return (
     <button
       type="button"
-      class="btn btn-secondary mb-2 btn-lg"
+      className="btn btn-success mb-3 btn-lg"
       onClick={() => history.push("/decks/new")}
     >
-      <span class="oi oi-plus" /> Create Deck
+      <span className="oi oi-plus" /> Create Deck
     </button>
   );
 }
