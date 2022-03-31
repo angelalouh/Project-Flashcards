@@ -7,7 +7,7 @@ function EditDeckCancelButton({ deckId }) {
   return (
     <button
       type="button"
-      class="btn btn-secondary mr-2"
+      className="btn btn-dark mr-2"
       onClick={() => history.push(`/decks/${deckId}`)}
     >
       Cancel

@@ -7,10 +7,10 @@ function ViewDeckButton({ deck }) {
   return (
     <button
       type="button"
-      class="btn btn-secondary mr-2"
+      className="btn btn-dark mr-2"
       onClick={() => history.push(`/decks/${deck.id}`)}
     >
-      <span class="oi oi-eye" /> View
+      <span className="oi oi-eye" /> View
     </button>
   );
 }
