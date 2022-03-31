@@ -5,9 +5,9 @@ import { deleteDeck } from "../../utils/api/index";
 function DeckScreenDeleteDeckButton({ deckId }) {
   const history = useHistory();
   
-  // When the user clicks on the "Delete" button associated with a particular deck, they
-  // will be given the warning message below. If the user clicks "OK", the deck is deleted
-  // and is no longer visible on the Home screen
+  /* When the user clicks on the "Delete" button associated with a particular deck, they
+  will be given the warning message below. If the user clicks "OK", the deck is deleted
+  and is no longer visible on the Home screen */
   const handleTrashClick = () => {
     if (
       window.confirm("Delete this deck? You will not be able to recover it.")
@@ -17,8 +17,8 @@ function DeckScreenDeleteDeckButton({ deckId }) {
   };
 
   return (
-    <button type="button" class="btn btn-danger" onClick={handleTrashClick}>
-      <span class="oi oi-trash" />
+    <button type="button" className="btn btn-danger" onClick={handleTrashClick}>
+      <span className="oi oi-trash" />
     </button>
   );
 }

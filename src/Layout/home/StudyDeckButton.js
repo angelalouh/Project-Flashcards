@@ -6,10 +6,10 @@ function StudyDeckButton({ deck }) {
   return (
     <button
       type="button"
-      class="btn btn-primary mr-2"
+      className="btn btn-primary mr-2"
       onClick={() => history.push(`/decks/${deck.id}/study`)}
     >
-      <span class="oi oi-book" /> Study
+      <span className="oi oi-book" /> Study
     </button>
   );
 }

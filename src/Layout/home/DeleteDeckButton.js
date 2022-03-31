@@ -14,11 +14,11 @@ function DeleteDeckButton({ deck }) {
   };
 
   return (
-    <button type="button" class="btn btn-danger" onClick={handleTrashClick}>
+    <button type="button" className="btn btn-danger" onClick={handleTrashClick}>
       {/* Using the anchor element to trigger the home page to refresh after deleting 
       the deck. This causes the deleted deck to no longer be displayed on the Home screen */}
-      <a href="/" class="text-white">
-        <span class="oi oi-trash" />
+      <a href="/" className="text-white">
+        <span className="oi oi-trash" />
       </a>
     </button>
   );
