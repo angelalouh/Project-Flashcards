@@ -5,24 +5,24 @@ import React from "react";
 function CardForm({ cardFront, handleCardFrontChange, cardBack, handleCardBackChange }) {
   return (
     <div>
-      <div class="form-group">
+      <div className="form-group">
         <label htmlFor="cardFront">Front</label>
         <textarea
           id="cardFront"
           name="cardFront"
-          class="form-control"
+          className="form-control"
           placeholder="Front side of card"
           rows="3"
           onChange={handleCardFrontChange}
           value={cardFront}
         />
       </div>
-      <div class="form-group">
+      <div className="form-group">
         <label htmlFor="cardBack">Back</label>
         <textarea
           id="cardBack"
           name="cardBack"
-          class="form-control"
+          className="form-control"
           placeholder="Back side of card"
           rows="3"
           onChange={handleCardBackChange}

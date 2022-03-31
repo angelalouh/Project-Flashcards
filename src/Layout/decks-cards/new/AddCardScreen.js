@@ -27,7 +27,7 @@ function AddCardScreen() {
   const handleCardBackChange = (event) => setCardBack(event.target.value);
 
   // When the user clicks on the "Save" button, the new card will be created using createCard()
-  // The textarea for the card front and back will be cleared and the process for adding a 
+  // The textarea for the card front and back will be cleared and the process for adding a
   // card is restarted.
   const handleAddCardSave = (event) => {
     event.preventDefault();
@@ -43,7 +43,6 @@ function AddCardScreen() {
       <div>
         <AddCardScreenBreadcrumbNavBar deckName={deck.name} deckId={deckId} />
         <h2>{deck.name}: Add Card</h2>
-  
         <form onSubmit={handleAddCardSave}>
           <CardForm
             cardFront={cardFront}
@@ -52,7 +51,7 @@ function AddCardScreen() {
             handleCardBackChange={handleCardBackChange}
           />
           <AddCardDoneButton deckId={deckId} />
-          <button type="submit" class="btn btn-primary">
+          <button type="submit" className="btn btn-success">
             Save
           </button>
         </form>
